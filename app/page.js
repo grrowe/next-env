@@ -6,7 +6,8 @@ export default function Home() {
   let NEXT_TEST = process.env.NEXT_TEST
   let NEXT_PUBLIC_TEST = process.NEXT_PUBLIC_TEST
   return (
-    <main className={styles.main}>
+    <main className={styles.main}>-
+    <br />
       {TEST || 'NO TEST'}
       <br/>
       {NEXT_TEST || 'NO NEXT TEST'}
