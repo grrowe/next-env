@@ -8,12 +8,7 @@ RUN npm install
 
 COPY . /app
 
-# The bundle exec rake assets:precompile command
-# will run with your configuration
-RUN set -a && . /app/.aptible.env && \
-        bundle exec rake assets:precompile
-
-RUN npm run build
+RUN set -a && . /app/.aptible.env && npm run build
 
 EXPOSE 3000
 
